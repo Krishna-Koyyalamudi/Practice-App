@@ -1,15 +1,14 @@
-function restGrandtotal()
+function Grandtotal()
 {
-     let rIntialTotal=parseFloat(document.querySelector('#total').value)
-     let rTipPerRate=parseFloat(document.querySelector('#rate').value)
+     let Total=parseFloat(document.querySelector('#total').value)
+     let TipRate=parseFloat(document.querySelector('#tiprate').value)
          
-     let rTip=rIntialTotal*(rTipPerRate/100)
-     let rTaxRate=5.50
-     //let rTax=rIntialTotal*(rTaxRate/100)
-     let rGrandTotal=rIntialTotal+rTip+rTaxRate;
+     let Tip=Total*(TipRate/100)
+     let TaxRate=Total*(5.50/100)
+     let GrandTotal=Total+Tip+TaxRate;
 
-     document.getElementById("Tip").innerHTML = rTip.toFixed(2);
-    // document.getElementById("Tax").innerHTML = rTax.toFixed(2);
-     document.getElementById("GrandTotal").innerHTML = rGrandTotal.toFixed(2);
+     document.getElementById("Tip").innerHTML = Tip.toFixed(2);
+     document.getElementById("Tax").innerHTML = TaxRate.toFixed(2);
+     document.getElementById("GrandTotal").innerHTML = GrandTotal.toFixed(2);
      
 }

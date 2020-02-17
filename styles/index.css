@@ -1,10 +1,25 @@
- h1{
-    align-self: auto;
+h1{
+    text-align:center;
+ }
+ p{
+    text-align:center;
+ }
+ table{
+     margin: auto;
  }
  body{
-     background-color: rgb(242, 248, 182);
- }
- #TotalCalc
- {
-     background-color: rgb(245, 191, 218);
- }
+     background-color: whitesmoke;
+ } 
+ #Calcbtn{
+    background-color:whitesmoke;
+    color: #00a2ec;
+    padding: 10px 15px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: larger;
+}
+#Calcbtn:hover{
+    background:#00a2ec;
+    color: #000000;
+}

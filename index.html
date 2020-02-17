@@ -3,17 +3,19 @@
 
 <head>
     <title>Restaurant</title>
-    <link href="rest.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+
 </head>
 <style>
 </style>
-<body >
+
+<body>
     <h1>Maitre D</h1>
     <hr>
-    <main >
+    <main>
         <br>
         <div>
-            <table align="center">
+            <table>
                 <tr>
                     <td>
                         <label>Total: $</label>
@@ -22,27 +24,39 @@
                 </tr>
                 <tr>
                     <td>
-                        <label>Tip: </label><span id="Tip">$</span><br><br>
+                        <label>Tip: $</label><span id="Tip"></span><br><br>
                     </td>
                     <td>
                         <label>Rate: %</label>
-                        <input id="rate" type="number" placeholder="Percent of tax"><br><br>
+                        <input id="tiprate" type="number" placeholder="Percent of tax"><br><br>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label>Tax: <span id="Tax">$5.50</span></label><br><br>
+                        <label>Tax: $<span id="Tax"></span></label><br><br>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label>Grand Total: <span id="GrandTotal">$</span></label><br>
+                        <label>Grand Total: $<span id="GrandTotal"></span></label><br>
                     </td>
                 </tr>
             </table>
-            <p><button id="TotalCalc" onclick="restGrandtotal()">Calculate</button></p>
+            <p><button id="Calcbtn" onclick="Grandtotal()">Calculate</button></p>
     </main>
-    <script src="jslogic.js"></script>
+    <script src="scripts/script.js"></script>
     </div>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
 </body>
+
 </html>
